@@ -1,19 +1,11 @@
 import React from 'react';
-import { ShoppingCart } from 'lucide-react';
-import { useCart } from '../context/CartContext';
 import { formatGhanaCedis } from '../utils/currency';
 import type { Product } from '../types';
 import Picture3 from '../img/Picture3.png';
 import Picture4 from '../img/Picture4.png';
-// import Picture5 from '../img/Picture5.png';
-// import Picture6 from '../img/Picture7.png';
 import Picture7 from '../img/Picture7.png';
 import Picture8 from '../img/Picture8.png';
 import Picture1 from '../img/Picture7.png';
-// import Picture7 from '../img/Picture7.png';
-
-
-
 
 const products: Product[] = [
   {
@@ -21,7 +13,6 @@ const products: Product[] = [
     name: "Solar Pro Incubator",
     description: "Professional-grade solar incubator with automatic temperature control",
     price: 7999.99,
-    // image: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80",
     image: Picture1,
     specs: {
       "Capacity": "500 eggs",
@@ -36,7 +27,6 @@ const products: Product[] = [
     name: "EcoHatch Basic",
     description: "Entry-level solar incubator perfect for small farms",
     price: 3999.99,
-    // image: "https://images.unsplash.com/photo-1567201080580-bfcc97dae346?auto=format&fit=crop&q=80",
     image: Picture3,
     specs: {
       "Capacity": "100 eggs",
@@ -52,14 +42,12 @@ const products: Product[] = [
     image: Picture7,
     description: "Advanced IoT-enabled solar incubator with mobile app control",
     price: 11999.99,
-    // image: "https://images.unsplash.com/photo-1562066474-677480f4f4ac?auto=format&fit=crop&q=80",
     specs: {
       "Capacity": "1000 eggs",
       "Temperature Range": "35-39°C",
       "Power Source": "Solar + Grid Backup",
       "Humidity Control": "Smart Automatic",
       "Display": "Digital LED",
-      // "Display": "7\" Touch Screen",
     },
   },
   {
@@ -68,7 +56,6 @@ const products: Product[] = [
     image: Picture7,
     description: "Mid-range solar incubator for growing farms",
     price: 5999.99,
-    // image: "https://images.unsplash.com/photo-1567201080580-bfcc97dae346?auto=format&fit=crop&q=80",
     specs: {
       "Capacity": "300 eggs",
       "Temperature Range": "35-38°C",
@@ -81,9 +68,8 @@ const products: Product[] = [
     id: 5,
     name: "EcoHatch Basic-101",
     image: Picture4,
-    description: "lorem lkerfmv",
+    description: "Lorem lkerfmv",
     price: 399.99,
-    // image: "https://images.unsplash.com/photo-1567201080580-bfcc97dae346?auto=format&fit=crop&q=80",
     specs: {
       "Capacity": "120 eggs",
       "Temperature Range": "35-38°C",
@@ -98,7 +84,6 @@ const products: Product[] = [
     image: Picture8,
     description: "Entry-level solar incubator",
     price: 39.99,
-    // image: "https://images.unsplash.com/photo-1567201080580-bfcc97dae346?auto=format&fit=crop&q=80",
     specs: {
       "Capacity": "120 eggs",
       "Temperature Range": "35-38°C",
@@ -110,7 +95,6 @@ const products: Product[] = [
 ];
 
 export function Products() {
-  const { dispatch } = useCart();
   const [selectedProduct, setSelectedProduct] = React.useState<Product | null>(null);
 
   return (
@@ -126,7 +110,8 @@ export function Products() {
                 src={product.image}
                 alt={product.name}
                 className="w-full h-48 object-cover cursor-pointer"
-                onClick={() => setSelectedProduct(product)} // Show details on click
+                onClick={() => setSelectedProduct(product)} 
+                // Show details on click
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
@@ -135,13 +120,12 @@ export function Products() {
                   <span className="text-2xl font-bold text-yellow-500">
                     {formatGhanaCedis(product.price)}
                   </span>
-                  <button
-                    onClick={() => dispatch({ type: 'ADD_TO_CART', payload: product })}
+                  <a
+                    href="tel:+233202647141" // Replace with your business phone number
                     className="flex items-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
                   >
-                    <ShoppingCart className="h-5 w-5 mr-2" />
-                    Add to Cart
-                  </button>
+                    Place an Order
+                  </a>
                 </div>
               </div>
             </div>
@@ -179,16 +163,12 @@ export function Products() {
                     <span className="text-3xl font-bold text-yellow-500">
                       {formatGhanaCedis(selectedProduct.price)}
                     </span>
-                    <button
-                      onClick={() => {
-                        dispatch({ type: 'ADD_TO_CART', payload: selectedProduct });
-                        setSelectedProduct(null);
-                      }}
+                    <a
+                      href="tel:+233202647141" // Replace with your business phone number
                       className="flex items-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
                     >
-                      <ShoppingCart className="h-5 w-5 mr-2" />
-                      Add to Cart
-                    </button>
+                      Place an Order
+                    </a>
                   </div>
                 </div>
               </div>

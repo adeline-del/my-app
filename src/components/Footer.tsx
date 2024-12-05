@@ -36,10 +36,8 @@ export function Footer() {
           
           <div>
             <h3 className="text-xl font-semibold mb-4">Address</h3>
-            <p>15 Solar Street</p>
-            <p>East Legon</p>
             <p>Accra, Ghana</p>
-            <p className="mt-2">Digital Address: GA-123-4567</p>
+            <p className="mt-2">Digital Address: Coming Soon</p>
           </div>
           
           <div>
