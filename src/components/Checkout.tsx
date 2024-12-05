@@ -18,7 +18,7 @@ export function Checkout() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically integrate with a payment processor
+    // I have to integrate a payment processor here
     alert('Order placed successfully! Thank you for your purchase. Our team will contact you shortly.');
     dispatch({ type: 'CLEAR_CART' });
     window.location.href = '#';

@@ -11,11 +11,11 @@ export function AboutCEO() {
             <img
               src={ceoPortrait}
               alt="CEO Portrait"
-              className="rounded-lg shadow-lg w-full h-[500px] object-cover"
+              className="rounded-lg shadow-lg w-full h-[600px] object-cover"
             />
           </div>
           <div>
-            <h2 className="text-3xl font-bold mb-6">Meet Our Innovator</h2>
+            <h2 className="text-3xl font-bold mb-6">Meet The Innovator</h2>
             <h3 className="text-xl font-semibold text-blue-600 mb-4">Eggcelent Hatcheries</h3>
             <p className="text-gray-600 mb-6">
               With over 15 years of experience in technology innovation, Sarah has led our company

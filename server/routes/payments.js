@@ -12,7 +12,8 @@ router.post('/card', async (req, res) => {
     const { amount, token } = req.body;
     
     const payment = await stripe.charges.create({
-      amount: amount * 100, // Convert to cents
+      // Convert to cents
+      amount: amount * 100, 
       currency: 'ghs',
       source: token,
       description: 'Solar Incubator Purchase'
