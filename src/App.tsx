@@ -1,7 +1,7 @@
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Products } from './components/Products';
-import { Team } from './components/Testimonials';
+import { FAQS } from './components/Faq';
 import { Footer } from './components/Footer';
 import { AboutCEO } from './components/About';
 
@@ -14,7 +14,7 @@ function App() {
         <Hero />
         <Products />
          <AboutCEO />
-         <Team />
+         <FAQS />
         <Footer />
       </div>
   );

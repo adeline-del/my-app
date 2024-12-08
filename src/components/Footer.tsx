@@ -9,15 +9,15 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <div className="space-y-2">
-              <a href="tel:+233241234567" className="flex items-center hover:text-yellow-500">
+              <a href="tel:+233543320377" className="flex items-center hover:text-yellow-500">
                 <Phone className="h-5 w-5 mr-2" />
                 +233 24 123 4567
               </a>
-              <a href="https://wa.me/233202647141" className="flex items-center hover:text-yellow-500">
+              <a href="https://wa.me/0543320377" className="flex items-center hover:text-yellow-500">
                 <MessageSquare className="h-5 w-5 mr-2" />
                 WhatsApp
               </a>
-            </div>
+            </div> 
           </div>
           
           <div>
