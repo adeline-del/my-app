@@ -6,7 +6,7 @@ interface Product {
   name: string;
   description: string;
   price: number;
-  images: string[]; 
+  images: string[];
   specs: { [key: string]: string };
 }
 
@@ -20,7 +20,7 @@ const products: Product[] = [
       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632529/prod_1_iq7ryd.jpg",
       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632529/prod_1_iq7ryd.jpg",
       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632529/prod_1_iq7ryd.jpg"
-      ],
+    ],
     specs: {
       "Capacity": "616 eggs",
       "Temperature Range": "35-39°C",
@@ -90,7 +90,7 @@ const products: Product[] = [
       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632530/prod_2_olfsse.jpg",
       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632530/prod_2_olfsse.jpg",
       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632530/prod_2_olfsse.jpg"
-      ],
+    ],
     description: "Entry-level Electric incubator",
     price: 8000.00,
     specs: {
@@ -106,8 +106,8 @@ const products: Product[] = [
     name: "EcoHatch Track",
     images: [
       "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634144/Picture6_qiqytt.png",
-       "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634143/Picture4_up67dv.png", 
-       "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634141/Picture8_fydnqd.png"
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634143/Picture4_up67dv.png",
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634141/Picture8_fydnqd.png"
     ],
     // description: "Entry-level Electric incubator",
     description: "NOT AVAILABLE",
@@ -140,17 +140,17 @@ export function Products() {
     <section id="products" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">Our Products</h2>
-        
+
         {/* Grid layout for products */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-              // Show the first image by default
-                src={product.images[0]} 
+                // Show the first image by default
+                src={product.images[0]}
                 alt={product.name}
                 className="w-full h-48 object-cover cursor-pointer"
-                onClick={() => setSelectedProduct(product)} 
+                onClick={() => setSelectedProduct(product)}
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
@@ -178,21 +178,24 @@ export function Products() {
               <div className="fixed inset-0 bg-black opacity-50" onClick={() => setSelectedProduct(null)}></div>
               <div className="relative bg-white rounded-lg max-w-2xl w-full">
                 <div className="p-6 relative">
+                  
                   {/* Close Button */}
                   <button
                     onClick={() => setSelectedProduct(null)}
-                    className="absolute top-1 right-6 text-gray-900 hover:text-gray-500 text-4xl"
+                    className="absolute top-4 right-4 z-50 text-gray-900 hover:text-gray-500 text-4xl"
                   >
                     ×
                   </button>
+
+
 
                   {/* Image Slider */}
                   <div className="relative">
                     <img
                       src={selectedProduct.images[currentImageIndex]}
                       alt={selectedProduct.name}
-                      className="w-full h-64 object-contain rounded-lg mb-4"  
-                      // Changed to object-contain for full image view
+                      className="w-full h-64 object-contain rounded-lg mb-4"
+                    // Changed to object-contain for full image view
                     />
                     {/* Left Arrow Button */}
                     <button
