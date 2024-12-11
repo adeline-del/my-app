@@ -91,7 +91,7 @@ const products: Product[] = [
       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632530/prod_2_olfsse.jpg",
       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632530/prod_2_olfsse.jpg"
       ],
-    description: "Lorem lkerfmv",
+    description: "Entry-level Electric incubator",
     price: 8000.00,
     specs: {
       "Capacity": "704 eggs",
@@ -109,8 +109,9 @@ const products: Product[] = [
        "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634143/Picture4_up67dv.png", 
        "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634141/Picture8_fydnqd.png"
     ],
-    description: "Entry-level Electric incubator",
-    price: 39.99,
+    // description: "Entry-level Electric incubator",
+    description: "NOT AVAILABLE",
+    price: .00,
     specs: {
       "Capacity": "120 eggs",
       "Temperature Range": "35-38°C",

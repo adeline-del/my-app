@@ -1,4 +1,5 @@
-// import React from 'react';
+
+
 import { Facebook, Instagram, Phone, MessageSquare } from 'lucide-react';
 
 export function Footer() {
@@ -9,11 +10,16 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <div className="space-y-2">
+              {/* Separate phone number links */}
               <a href="tel:+233543320377" className="flex items-center hover:text-yellow-500">
                 <Phone className="h-5 w-5 mr-2" />
-                +233 24 123 4567
+                +233 54 332 0377
               </a>
-              <a href="https://wa.me/0543320377" className="flex items-center hover:text-yellow-500">
+              <a href="tel:+233530735252" className="flex items-center hover:text-yellow-500">
+                <Phone className="h-5 w-5 mr-2" />
+                +233 53 073 5252
+              </a>
+              <a href="https://wa.me/+233543320377" className="flex items-center hover:text-yellow-500">
                 <MessageSquare className="h-5 w-5 mr-2" />
                 WhatsApp
               </a>
@@ -23,11 +29,11 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Social Media</h3>
             <div className="space-y-2">
-              <a href="https://facebook.com/solarhatchgh" className="flex items-center hover:text-yellow-500">
+              <a href="https://facebook.com/eggcelenthatcheriesgh" className="flex items-center hover:text-yellow-500">
                 <Facebook className="h-5 w-5 mr-2" />
                 Facebook
               </a>
-              <a href="https://instagram.com/solarhatchgh" className="flex items-center hover:text-yellow-500">
+              <a href="https://instagram.com/eggcelenthatcheriesgh" className="flex items-center hover:text-yellow-500">
                 <Instagram className="h-5 w-5 mr-2" />
                 Instagram
               </a>
@@ -36,8 +42,16 @@ export function Footer() {
           
           <div>
             <h3 className="text-xl font-semibold mb-4">Address</h3>
-            <p>Techiman, Ghana</p>
-            <p className="mt-2">Digital Address: Coming Soon</p>
+            {/* Link the address to Google Maps */}
+            <a href="https://www.google.com/maps?q=Techiman,+Ghana" className="hover:text-yellow-500">
+              Techiman, Ghana
+            </a>
+            <p className="mt-2">
+              {/* Link the digital address to Ghana Post GPS */}
+              <a href="https://address.gps.gov.gh/?q=Coming%20Soon" className="hover:text-yellow-500">
+                Digital Address: Coming Soon
+              </a>
+            </p>
           </div>
           
           <div>
