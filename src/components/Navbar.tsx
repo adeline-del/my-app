@@ -12,10 +12,10 @@ export function Navbar() {
         <a href="#home" className="flex items-center">
           <img 
             src="https://res.cloudinary.com/djfnmztu9/image/upload/v1733642857/logo_no_background_xifxdq.png" 
-            alt="IncuVate Logo" 
+            alt="Eggcelent Hatcheries Logo" 
             className="h-14 w-22" 
           />
-          <span className="ml-0 text-3xl font-bold text-gray-800">IncuVate</span>
+          <span className="ml-0 text-3xl font-bold text-gray-800">Eggcelent Hatcheries</span>
         </a>
       </div>  
           <div className="hidden md:flex items-center space-x-8 text-lg">

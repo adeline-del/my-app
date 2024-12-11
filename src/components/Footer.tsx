@@ -36,7 +36,7 @@ export function Footer() {
           
           <div>
             <h3 className="text-xl font-semibold mb-4">Address</h3>
-            <p>Accra, Ghana</p>
+            <p>Techiman, Ghana</p>
             <p className="mt-2">Digital Address: Coming Soon</p>
           </div>
           
@@ -49,7 +49,7 @@ export function Footer() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p>&copy; {new Date().getFullYear()} SolarHatch Ghana. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Eggcelent Hatcheries Ghana. All rights reserved.</p>
         </div>
       </div>
     </footer>

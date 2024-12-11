@@ -1,8 +1,5 @@
 import { useState } from 'react';
 import { formatGhanaCedis } from '../utils/currency';
-import Picture3 from '../img/Picture3.png';
-import Picture7 from '../img/Picture7.png';
-import Picture8 from '../img/Picture8.png';
 
 interface Product {
   id: number;
@@ -16,32 +13,36 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: "M1 Pro Incubator",
-    description: "Professional-grade incubator with automatic temperature control",
-    price: 7999.99,
+    name: "IncuVate Incubator",
+    description: "Professional-grade incubator with Manual temperature control",
+    price: 7350.00,
     images: [
-      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733634144/Picture6_qiqytt.png",
-       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733634143/Picture4_up67dv.png", 
-       "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733634142/Picture5_kl5qcs.png"
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632529/prod_1_iq7ryd.jpg",
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632529/prod_1_iq7ryd.jpg",
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632529/prod_1_iq7ryd.jpg"
       ],
     specs: {
-      "Capacity": "500 eggs",
+      "Capacity": "616 eggs",
       "Temperature Range": "35-39°C",
-      "Power Source": "Electric + Battery Backup",
-      "Humidity Control": "Automatic",
+      "Power Source": "Electricity",
+      "Humidity Control": "Manual",
       "Display": "LCD Screen",
     },
   },
   {
     id: 2,
-    name: "EcoHatch Basic",
-    description: "Entry-level solar incubator perfect for small farms",
-    price: 3999.99,
-    images: [Picture3, Picture7, Picture8],
+    name: "IncuVate Incubator",
+    description: "Entry-level Electricity incubator perfect for small farms",
+    price: 5600.00,
+    images: [
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632529/prod_3_ysboiw.jpg",
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632529/prod_3_ysboiw.jpg",
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632529/prod_3_ysboiw.jpg"
+    ],
     specs: {
-      "Capacity": "100 eggs",
+      "Capacity": "528 eggs",
       "Temperature Range": "35-38°C",
-      "Power Source": "Solar",
+      "Power Source": "Electricity",
       "Humidity Control": "Manual",
       "Display": "Digital LED",
     },
@@ -49,41 +50,53 @@ const products: Product[] = [
   {
     id: 3,
     name: "SmartHatch Elite",
-    images: [Picture3, Picture7, Picture8],
-    description: "Advanced IoT-enabled solar incubator with mobile app control",
-    price: 11999.99,
+    images: [
+      "https://res.cloudinary.com/djfnmztu9/image/upload//w_300,h_300,c_fill/v1733632530/prod_4_ledkha.jpg",
+      "https://res.cloudinary.com/djfnmztu9/image/upload//w_300,h_300,c_fill/v1733632530/prod_4_ledkha.jpg",
+      "https://res.cloudinary.com/djfnmztu9/image/upload//w_300,h_300,c_fill/v1733632530/prod_4_ledkha.jpg"
+    ],
+    description: "Smart Electric incubator",
+    price: 5200.00,
     specs: {
-      "Capacity": "1000 eggs",
+      "Capacity": "440 eggs",
       "Temperature Range": "35-39°C",
-      "Power Source": "Solar + Grid Backup",
-      "Humidity Control": "Smart Automatic",
+      "Power Source": "Electricity",
+      "Humidity Control": "Manual",
       "Display": "Digital LED",
     },
   },
   {
     id: 4,
     name: "EcoHatch Pro",
-    images: [Picture3, Picture7, Picture8],
-    description: "Mid-range solar incubator for growing farms",
-    price: 5999.99,
+    images: [
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733634142/Picture5_kl5qcs.png",
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733634143/Picture4_up67dv.png",
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733634140/Picture3_gibylx.png"
+    ],
+    description: "Mid-range Electricity incubator for growing farms",
+    price: 4500.00,
     specs: {
-      "Capacity": "300 eggs",
+      "Capacity": "264 eggs",
       "Temperature Range": "35-38°C",
-      "Power Source": "Solar",
-      "Humidity Control": "Semi-Automatic",
+      "Power Source": "Electricity",
+      "Humidity Control": "Manual",
       "Display": "Digital LED",
     },
   },
   {
     id: 5,
     name: "EcoHatch Basic-101",
-    images: [Picture3, Picture7, Picture8],
+    images: [
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632530/prod_2_olfsse.jpg",
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632530/prod_2_olfsse.jpg",
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_300,h_300,c_fill/v1733632530/prod_2_olfsse.jpg"
+      ],
     description: "Lorem lkerfmv",
-    price: 399.99,
+    price: 8000.00,
     specs: {
-      "Capacity": "120 eggs",
+      "Capacity": "704 eggs",
       "Temperature Range": "35-38°C",
-      "Power Source": "Solar",
+      "Power Source": "Electricity",
       "Humidity Control": "Manual",
       "Display": "Digital LED",
     },
@@ -91,13 +104,17 @@ const products: Product[] = [
   {
     id: 6,
     name: "EcoHatch Track",
-    images: [Picture3, Picture7, Picture8],
-    description: "Entry-level solar incubator",
+    images: [
+      "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634144/Picture6_qiqytt.png",
+       "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634143/Picture4_up67dv.png", 
+       "https://res.cloudinary.com/djfnmztu9/image/upload/w_350,h_300,c_fill/v1733634141/Picture8_fydnqd.png"
+    ],
+    description: "Entry-level Electric incubator",
     price: 39.99,
     specs: {
       "Capacity": "120 eggs",
       "Temperature Range": "35-38°C",
-      "Power Source": "Solar",
+      "Power Source": "Electricity",
       "Humidity Control": "Manual",
       "Display": "Digital LED",
     },
@@ -163,7 +180,7 @@ export function Products() {
                   {/* Close Button */}
                   <button
                     onClick={() => setSelectedProduct(null)}
-                    className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-3xl"
+                    className="absolute top-1 right-6 text-gray-900 hover:text-gray-500 text-4xl"
                   >
                     ×
                   </button>
