@@ -161,7 +161,7 @@ export function Products() {
                   </span>
                   <a
                     href="tel:+233202647141"
-                    className="flex items-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+                    className="flex items-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
                   >
                     Place an Order
                   </a>
@@ -228,7 +228,7 @@ export function Products() {
                     </span>
                     <a
                       href="tel:+233202647141"
-                      className="flex items-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
+                      className="flex items-center bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
                     >
                       Place an Order
                     </a>
