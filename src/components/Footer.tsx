@@ -29,11 +29,11 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Social Media</h3>
             <div className="space-y-2">
-              <a href="https://facebook.com/eggcelenthatcheriesgh" className="flex items-center hover:text-yellow-500">
+              <a href="https://web.facebook.com/profile.php?id=61569534077379" className="flex items-center hover:text-yellow-500">
                 <Facebook className="h-5 w-5 mr-2" />
                 Facebook
               </a>
-              <a href="https://instagram.com/eggcelenthatcheriesgh" className="flex items-center hover:text-yellow-500">
+              <a href="https://www.instagram.com/eggcelent_innovations/" className="flex items-center hover:text-yellow-500">
                 <Instagram className="h-5 w-5 mr-2" />
                 Instagram
               </a>
@@ -63,7 +63,7 @@ export function Footer() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p>&copy; {new Date().getFullYear()} Eggcelent Hatcheries Ghana. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Eggcelent Innovations  Ghana. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -18,7 +18,7 @@ export function Hero() {
         Empowering Poultry Farmers with Innovation, Quality,<br />and Reliability
 </h1>
 <p className="text-xl md:text-2xl mb-8">
-One Egg at a Time.
+Hatch More. Grow More
 </p>
 
           <a
